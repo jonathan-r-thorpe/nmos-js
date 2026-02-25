@@ -433,10 +433,7 @@ const MXLReceiverLeg = ({ data }) => {
             <CardContent>
                 <SimpleShowLayout record={data}>
                     {has(data, 'flow_id') && (
-                        <TextField
-                            source="flow_id"
-                            label="Flow ID"
-                        />
+                        <TextField source="flow_id" label="Flow ID" />
                     )}
                     {params_ext.length !== 0 && <SanitizedDivider />}
                     {params_ext.map(param => (
